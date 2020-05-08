@@ -56,8 +56,26 @@ class Calculator{
         this.operation = undefined;
         this.prevOperand = '';
     }
+    getDisplayNumber(number){
+        var stringNum = number.toString();
+        var digitsBefore = parseFloat(stringNum.split('.')[0]);
+        var digitsAfter = stringNum.split('.')[1];
+        var integerDisplay;
+        if(isNaN(digitsBefore)){
+            integerDisplay = '';
+        }
+        else{
+            integerDisplay = digitsBefore.toLocaleString('en-IN', {maximumFractionDigits: 0});
+        }
+        if(digitsAfter != null){
+            return integerDisplay + "." + digitsAfter;
+        }
+        else{
+            return integerDisplay;
+        }
+    }
     updateDisplay(){
-        this.currOperandText.innerText = this.currOperand;
+        this.currOperandText.innerText = this.getDisplayNumber(this.currOperand);
         this.prevOperandText.innerText = this.prevOperand;
     }
 
