@@ -2,17 +2,14 @@
 
 ![Project Image](./readme_image.png)
 
-> This is a basic calculator made using HTML, CSS and javascript
-You can view the project from here: https://lakshdhamija.github.io/calculator/
+> This is a basic calculator made using HTML, CSS and javascript.
+> You can view the project from here: https://lakshdhamija.github.io/calculator/
 
 ---
 
 ### Table of Contents
 
 - [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
 - [Author Info](#author-info)
 
 ---
